@@ -3,7 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users, id: :uuid do |t|
       t.string    :username,            :null => false
       t.string    :email,               :null => false
-      t.string    :encrypted_password,  :null => false
+      t.string    :password
       t.string    :first_name
       t.string    :last_name
       t.string    :sur_name
@@ -16,8 +16,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string    :address2
       t.string    :address3
       t.string    :dob
-      t.string    :image_id
-      t.integer   :external_id, :default => 1, :null => false
+      t.boolean   :active,  default: true, null: false
+      t.integer   :image_id
       t.datetime  :current_sign_in_at
       t.datetime  :last_sign_in_at
       t.string    :current_sign_in_ip
