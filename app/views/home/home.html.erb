@@ -1,0 +1,641 @@
+<div class="theme-config">
+    <div class="theme-config-box">
+        <div class="spin-icon">
+            <i class="fa fa-cogs fa-spin"></i>
+        </div>
+        <div class="skin-setttings">
+            <div class="title">Configuration</div>
+            <div class="setings-item">
+                <span>
+                    Collapse menu
+                </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="collapsemenu">
+                        <label class="onoffswitch-label" for="collapsemenu">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                <span>
+                    Fixed sidebar
+                </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="fixedsidebar" class="onoffswitch-checkbox" id="fixedsidebar">
+                        <label class="onoffswitch-label" for="fixedsidebar">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                <span>
+                    Top navbar
+                </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="fixednavbar" class="onoffswitch-checkbox" id="fixednavbar">
+                        <label class="onoffswitch-label" for="fixednavbar">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                <span>
+                    Boxed layout
+                </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="boxedlayout" class="onoffswitch-checkbox" id="boxedlayout">
+                        <label class="onoffswitch-label" for="boxedlayout">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                <span>
+                    Fixed footer
+                </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="fixedfooter" class="onoffswitch-checkbox" id="fixedfooter">
+                        <label class="onoffswitch-label" for="fixedfooter">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">Skins</div>
+            <div class="setings-item default-skin">
+                <span class="skin-name ">
+                    <a href="#" class="s-skin-0">
+                        Default
+                    </a>
+                </span>
+            </div>
+            <div class="setings-item blue-skin">
+                <span class="skin-name ">
+                    <a href="#" class="s-skin-1">
+                        Blue light
+                    </a>
+                </span>
+            </div>
+            <div class="setings-item yellow-skin">
+                <span class="skin-name ">
+                    <a href="#" class="s-skin-3">
+                        Yellow/Purple
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Wrapper-->
+    <div id="wrapper" class="layoutsoptions.index">
+
+        <!-- Navigation -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                    	<%= image_tag "profile_small-1d99cea4c7f19419af8eb43ad4452d83.jpg", :class => "img-circle", :alt=> 'image'%>
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">David Williams</strong>
+                            </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="">Profile</a>
+                        </li>
+                        <li><a href="">Contacts</a>
+                        </li>
+                        <li><a href="">Mailbox</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+            <li class="">
+                <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level ">
+                    <li class=""><a href="/">Dashboard v.1</a></li>
+                    <li class=""><a href="/dashboards/dashboard_2">Dashboard v.2</a></li>
+                    <li class=""><a href="/dashboards/dashboard_3">Dashboard v.3</a></li>
+                    <li class=""><a href="/dashboards/dashboard_4_1">Dashboard v.4</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="/layoutsoptions/index">
+                <i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span> <span class="label label-primary pull-right">NEW</span>
+</a>            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level is_active_controller('graphs')">
+                    <li class=""><a href="/graphs/flot">Flot Charts</a></li>
+                    <li class=""><a href="/graphs/morris">Morris.js Charts</a></li>
+                    <li class=""><a href="/graphs/rickshaw">Rickshaw Charts</a> </li>
+                    <li class=""><a href="/graphs/chartjs">Chart.js</a></li>
+                    <li class=""><a href="/graphs/peity">Peity Charts</a></li>
+                    <li class=""><a href="/graphs/sparkline">Sparkline Charts</a> </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                <ul class="nav nav-second-level is_active_controller('mailbox')">
+                    <li class=""><a href="/mailbox/inbox">Inbox</a> </li>
+                    <li class=""><a href="/mailbox/email_view">Email view</a> </li>
+                    <li class=""><a href="/mailbox/compose_email">Compose email</a> </li>
+                    <li class=""><a href="/mailbox/email_templates">Email templates</a> </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="/widgets/index">
+                <i class="fa fa-flask"></i> <span class="nav-label">Widgets</span>
+</a>            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level is_active_controller('forms')">
+                    <li class=""><a href="/forms/basic_forms">Basic form</a></li>
+                    <li class=""><a href="/forms/advanced">Advanced Plugins</a> </li>
+                    <li class=""><a href="/forms/wizard">Wizard</a> </li>
+                    <li class=""><a href="/forms/file_upload">File Upload</a> </li>
+                    <li class=""><a href="/forms/text_editor">Text Editor</a> </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                <ul class="nav nav-second-level is_active_controller('appviews')">
+                    <li class=""><a href="/appviews/contacts">Contacts</a> </li>
+                    <li class=""><a href="/appviews/profile">Profile</a> </li>
+                    <li class=""><a href="/appviews/projects">Projects</a> </li>
+                    <li class=""><a href="/appviews/project_detail">Project detail</a> </li>
+                    <li class=""><a href="/appviews/file_menager">File manager</a> </li>
+                    <li class=""><a href="/appviews/calendar">Calendar</a> </li>
+                    <li class=""><a href="/appviews/faq">FAQ</a> </li>
+                    <li class=""><a href="/appviews/timeline">Timeline</a> </li>
+                    <li class=""><a href="/appviews/pin_board">Pin board</a> </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level is_active_controller('pages')">
+                    <li class=""><a href="/pages/search_results">Search results</a> </li>
+                    <li class=""><a href="/pages/lockscreen">Lockscreen</a> </li>
+                    <li class=""><a href="/pages/invoice">Invoice</a> </li>
+                    <li class=""><a href="/pages/login">Login</a> </li>
+                    <li class=""><a href="/pages/login_2">Login v.2</a></li>
+                    <li class=""><a href="/pages/register">Register</a> </li>
+                    <li class=""><a href="/pages/not_found_error">404 Page</a> </li>
+                    <li class=""><a href="/pages/internal_server_error">500 Page</a> </li>
+                    <li class=""><a href="/pages/empty_page">Empty page</a> </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
+                <ul class="nav nav-second-level is_active_controller('miscellaneous')">
+                    <li class=""><a href="/miscellaneous/notification">Notification</a> </li>
+                    <li class=""><a href="/miscellaneous/nestablelist">Nestable list</a></li>
+                    <li class=""><a href="/miscellaneous/timeline_second_version">Timeline v.2</a> </li>
+                    <li class=""><a href="/miscellaneous/forum_view">Forum view</a> </li>
+                    <li class=""><a href="/miscellaneous/google_maps">Google maps</a> </li>
+                    <li class=""><a href="/miscellaneous/code_editor">Code editor</a> </li>
+                    <li class=""><a href="/miscellaneous/modal_window">Modal window</a> </li>
+                    <li class=""><a href="/miscellaneous/validation">Validation</a> </li>
+                    <li class=""><a href="/miscellaneous/tree_view">Tree view</a> </li>
+                    <li class=""><a href="/miscellaneous/chat_view">Chat view</a> </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level is_active_controller('uielements')">
+                    <li class=""><a href="/uielements/typography">Typography</a></li>
+                    <li class=""><a href="/uielements/icons">Icons</a> </li>
+                    <li class=""><a href="/uielements/draggable_panels">Draggable Panels</a> </li>
+                    <li class=""><a href="/uielements/buttons">Buttons</a></li>
+                    <li class=""><a href="/uielements/video">Video</a> </li>
+                    <li class=""><a href="/uielements/tables_panels">Tabs &amp; Panels</a> </li>
+                    <li class=""><a href="/uielements/notifications_tooltips">Notifications &amp; Tooltips</a> </li>
+                    <li class=""><a href="/uielements/badges_labels_progress">Badges, Labels, Progress</a> </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="/gridoptions/index">
+                <i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span>
+</a>            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level is_active_controller('tables')">
+                    <li class=""><a href="/tables/static_tables">Static Tables</a> </li>
+                    <li class=""><a href="/tables/data_tables">Data Tables</a></li>
+                    <li class=""><a href="/tables/jqgrid">jqGrid</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level is_active_controller('gallery')">
+                    <li class=""><a href="/gallery/basic_gallery">Lightbox Gallery</a> </li>
+                    <li class=""><a href="/gallery/bootstrap_carusela">Bootstrap Carusela</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="#">Third Level <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Second Level Item</a></li>
+                    <li>
+                        <a href="#">Second Level Item</a></li>
+                    <li>
+                        <a href="#">Second Level Item</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="/cssanimations/index">
+                <i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span>
+</a>            </li>
+        </ul>
+
+    </div>
+</nav>
+
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg ">
+
+            <!-- Page wrapper -->
+            <div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" method="post" action="">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="#" class="pull-left">
+                                <img alt="image" class="img-circle" src="images/a7-60b399e384f39fdfe6d4769f1dfd670a.jpg">
+                            </a>
+                            <div class="media-body">
+                                <small class="pull-right">46h ago</small>
+                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="#" class="pull-left">
+                                <img alt="image" class="img-circle" src="images/a4-8525ee930f4e9e383e2415fdb2c8fc8a.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="pull-right text-navy">5h ago</small>
+                                <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="#" class="pull-left">
+                                <img alt="image" class="img-circle" src="images/profile-98db642e939272824fa73256e9348765.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="pull-right">23h ago</small>
+                                <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="#">
+                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span class="pull-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="/pages/login_2">
+                <i class="fa fa-sign-out"></i> Log out
+            </a>
+        </li>
+    </ul>
+</nav>
+        </div>
+
+            <!-- Main view  -->
+            <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Layouts</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+                <strong>Layouts</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content text-center p-md">
+
+                <h2><span class="text-navy">INSPINIA - Responsive Admin Theme</span>
+                    is provided with two main layouts <br/>three skins and separate configure options.</h2>
+
+                <p>
+                    All config options you can trun on/off from the theme box configuration (green icon on the left side of page).
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content text-center p-md">
+
+                <h4 class="m-b-xxs">Top navigation, centered content layout <span class="label label-primary">NEW</span></h4>
+                <small>(optional layout)</small>
+                <p>Avalible configure options</p>
+                <span class="simple_tag">Scroll navbar</span>
+                <span class="simple_tag">Top fixed navbar</span>
+                <span class="simple_tag">Boxed layout</span>
+                <span class="simple_tag">Scroll footer</span>
+                <span class="simple_tag">Fixed footer</span>
+                <div class="m-t-md">
+                    <p>Check the Dashboard v.4 with top navigation layout</p>
+                    <div class="p-lg ">
+                        <a href="/dashboards/dashboard_4"><img class="img-responsive img-shadow" src="dashbard4_2-9fe11fb508137292d64d4225e82e4eab.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content text-center p-md">
+
+                <h4 class="m-b-xxs">Basci left side nabigation layout </h4><small>(main layout)</small>
+                <p>Avalible configure options</p>
+                <span class="simple_tag">Collapse menu</span>
+                <span class="simple_tag">Fixed sidebar</span>
+                <span class="simple_tag">Scroll navbar</span>
+                <span class="simple_tag">Top fixed navbar</span>
+                <span class="simple_tag">Boxed layout</span>
+                <span class="simple_tag">Scroll footer</span>
+                <span class="simple_tag">Fixed footer</span>
+                <div class="m-t-md">
+                    <p>Check the Dashboard v.4 with basic layout</p>
+                    <div class="p-lg">
+                        <a href="/dashboards/dashboard_4_1"><img class="img-responsive img-shadow" src="images/dashbard4_1-095f6ce58b21a1a8ef0ee4a2c6660080.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+            <!-- Footer -->
+            <div class="footer">
+    <div class="pull-right">
+        Example text
+    </div>
+    <div>
+        <strong>Copyright</strong> Example Company &copy; 2014-2015
+    </div>
+</div>
+
+
+        </div>
+        <!-- End page wrapper-->
+
+    </div>
+    <!-- End wrapper-->
+
+    <!-- Include javascript per-controller - vendor plugins -->
+    
+
+    <!-- Include javascript per-view -->
+    <!-- For demo purpose we include javascript in view but you can easily start SeedProject and organize it with Rails asset pipeline as you want -->
+    
+<script type="text/javascript">
+
+
+    // Config box
+    // Enable/disable fixed top navbar
+    $('#fixednavbar').click(function () {
+        if ($('#fixednavbar').is(':checked')) {
+            $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+            $("body").removeClass('boxed-layout');
+            $("body").addClass('fixed-nav');
+            $('#boxedlayout').prop('checked', false);
+        } else {
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav');
+        }
+    });
+
+    // Enable/disable fixed sidebar
+    $('#fixedsidebar').click(function () {
+        if ($('#fixedsidebar').is(':checked')) {
+            $("body").addClass('fixed-sidebar');
+            $('.sidebar-collapse').slimScroll({
+                height: '100%',
+                railOpacity: 0.9,
+            });
+        } else {
+            $('.sidebar-collapse').slimscroll({destroy: true});
+            $('.sidebar-collapse').attr('style', '');
+            $("body").removeClass('fixed-sidebar');
+        }
+    });
+
+    // Enable/disable collapse menu
+    $('#collapsemenu').click(function () {
+        if ($('#collapsemenu').is(':checked')) {
+            $("body").addClass('mini-navbar');
+            SmoothlyMenu();
+        } else {
+            $("body").removeClass('mini-navbar');
+            SmoothlyMenu();
+        }
+    });
+
+    // Enable/disable boxed layout
+    $('#boxedlayout').click(function () {
+        if ($('#boxedlayout').is(':checked')) {
+            $("body").addClass('boxed-layout');
+            $('#fixednavbar').prop('checked', false);
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav');
+            $(".footer").removeClass('fixed');
+            $('#fixedfooter').prop('checked', false);
+        } else {
+            $("body").removeClass('boxed-layout');
+        }
+    });
+
+    // Enable/disable fixed footer
+    $('#fixedfooter').click(function () {
+        if ($('#fixedfooter').is(':checked')) {
+            $('#boxedlayout').prop('checked', false);
+            $("body").removeClass('boxed-layout');
+            $(".footer").addClass('fixed');
+        } else {
+            $(".footer").removeClass('fixed');
+        }
+    });
+
+    // SKIN Select
+    $('.spin-icon').click(function () {
+        $(".theme-config-box").toggleClass("show");
+    });
+
+    // Default skin
+    $('.s-skin-0').click(function () {
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+    });
+
+    // Blue skin
+    $('.s-skin-1').click(function () {
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").addClass("skin-1");
+    });
+
+    // Inspinia ultra skin
+    $('.s-skin-2').click(function () {
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-3");
+        $("body").addClass("skin-2");
+    });
+
+    // Yellow skin
+    $('.s-skin-3').click(function () {
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").addClass("skin-3");
+    });
+
+</script>
